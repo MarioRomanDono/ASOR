@@ -16,5 +16,6 @@ int main() {
 		perror("Error while executing uname");
 		return -1;
 	}
+	free(sysinfo);
 	return 0;
 }
