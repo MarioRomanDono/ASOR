@@ -1,0 +1,2 @@
+1. ps ux
+2. ps axo pid,pgid,sid,stat,command 
