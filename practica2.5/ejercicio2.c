@@ -35,7 +35,7 @@ int main(int argc, char ** argv) {
 		return -1;
 	}
 
-       	udp6_sd = socket(AF_INET6, SOCK_DGRAM, 0);
+       	udp6_sd = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
 	if (udp6_sd == -1) {
 		perror("Error socket()");
 		return -1;
